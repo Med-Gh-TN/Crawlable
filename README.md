@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🦅 Crowable
+# 🦅 Crawlable
 **State-of-the-Art (SOTA) AI-Powered Codebase Extractor**
 
 <a href="https://github.com/Med-Gh-TN/Crawlable/stargazers">
@@ -31,13 +31,13 @@
 
 ## 📖 Overview
 
-Welcome to **Crowable**! 
+Welcome to **Crawlable**! 
 
 If you've ever tried to feed an entire project to an AI model (like ChatGPT, Claude, or Gemini) to ask for a refactor or bug fix, you know the struggle. You hit token limits, you accidentally upload `node_modules` or `.git` folders, and the AI loses context.
 
-**Crowable solves this.** It is an intelligent, high-speed CLI tool that scans your project directory, uses Google's powerful **Gemini AI** to figure out what files are useless noise, and asynchronously extracts only the *core, proprietary source code*. It outputs a beautiful, human-readable (and LLM-readable) text artifact that you can instantly drop into any AI assistant.
+**Crawlable solves this.** It is an intelligent, high-speed CLI tool that scans your project directory, uses Google's powerful **Gemini AI** to figure out what files are useless noise, and asynchronously extracts only the *core, proprietary source code*. It outputs a beautiful, human-readable (and LLM-readable) text artifact that you can instantly drop into any AI assistant.
 
-Whether you are a seasoned software architect or a non-technical manager trying to understand a codebase, Crowable does the heavy lifting for you.
+Whether you are a seasoned software architect or a non-technical manager trying to understand a codebase, Crawlable does the heavy lifting for you.
 
 ---
 
@@ -47,13 +47,13 @@ Whether you are a seasoned software architect or a non-technical manager trying 
 - ⚡ **Asynchronous Extraction:** Built on Python's `asyncio`, it reads hundreds of files concurrently for blazing-fast performance.
 - 🛡️ **Smart Truncation Algorithm:** Automatically collapses massive directories (like `node_modules` or `venv`) in the project roadmap so you don't waste valuable AI tokens.
 - 🎨 **Beautiful Terminal UI:** Powered by the `rich` library, featuring live spinning progress bars, dynamic tables, and real-time status updates.
-- 📦 **Versioned Output:** Automatically groups your extractions into timestamped folders (`/crowable_output/Project_YYYY-MM-DD_HH-MM/`) keeping your workspace clean.
+- 📦 **Versioned Output:** Automatically groups your extractions into timestamped folders (`/crawlable_output/Project_YYYY-MM-DD_HH-MM/`) keeping your workspace clean.
 
 ---
 
 ## 🚀 For Beginners: "Zero to Hero" Setup
 
-Don't have a Computer Science degree? Never used the terminal before? **No problem.** Follow these 4 easy steps to get Crowable running on your machine.
+Don't have a Computer Science degree? Never used the terminal before? **No problem.** Follow these 4 easy steps to get Crawlable running on your machine.
 
 ### Step 1: Install Python
 You need Python to run this tool. 
@@ -61,28 +61,30 @@ You need Python to run this tool.
 - **CRITICAL (Windows Users):** When the installer opens, make sure to check the box that says **"Add Python to PATH"** before clicking Install.
 
 ### Step 2: Get a Free Google Gemini API Key
-Crowable uses Google's AI brain, which requires a "key" to access.
+Crawlable uses Google's AI brain, which requires a "key" to access.
 1. Go to [Google AI Studio](https://aistudio.google.com/).
 2. Sign in with your Google account.
 3. Click **"Get API key"** on the left menu.
 4. Click **"Create API key"** and copy the long string of letters and numbers it gives you. Keep this secret!
 
-### Step 3: Download and Setup Crowable
+### Step 3: Download and Setup Crawlable
 Open your computer's terminal (Command Prompt on Windows, Terminal on Mac) and run these commands one by one:
 
 ```bash
 # 1. Download the code to your computer
-git clone https://github.com/Med-Gh-TN/Crawable.git
+git clone [https://github.com/Med-Gh-TN/Crawlable.git](https://github.com/Med-Gh-TN/Crawlable.git)
 
 # 2. Go into the project folder
-cd Crawable
+cd Crawlable
 
 # 3. Install the required packages
 pip install -r requirements.txt
+
 ```
 
 ### Step 4: Add Your API Key
-1. Open the Crowable folder on your computer.
+
+1. Open the Crawlable folder on your computer.
 2. Navigate to `src/config.py` and open it with any text editor (Notepad, VS Code, TextEdit).
 3. Find the line that says `API_KEY = "YOUR_API_KEY_HERE"`.
 4. Replace `YOUR_API_KEY_HERE` with the key you got from Google in Step 2. (Keep the quotation marks!)
@@ -92,17 +94,20 @@ pip install -r requirements.txt
 
 ## 💻 Usage
 
-Using Crowable is incredibly simple. Open your terminal and run the main script, followed by the path of the folder you want to analyze.
+Using Crawlable is incredibly simple. Open your terminal and run the main script, followed by the path of the folder you want to analyze.
 
 **Command:**
+
 ```bash
 python main.py /path/to/your/target/project
+
 ```
 
 *(Tip: You can literally drag and drop a folder from your desktop into the terminal window to automatically paste its path!)*
 
 **Expected Output:**
-The terminal will display a gorgeous dashboard as it works through the 4 phases. Once complete, look inside the `crowable_output/` folder. You will find:
+The terminal will display a gorgeous dashboard as it works through the 4 phases. Once complete, look inside the `crawlable_output/` folder. You will find:
+
 1. `project_roadmap.txt`: A clean, tree-like map of the project.
 2. `source_code.txt`: The consolidated, purely filtered code ready to be fed to an AI.
 3. `prompt.txt`: A base prompt template you can use to start your AI conversation.
@@ -111,24 +116,25 @@ The terminal will display a gorgeous dashboard as it works through the 4 phases.
 
 ## 🏗️ Under the Hood (Architecture)
 
-For the technical folks, Crowable operates on a highly decoupled, service-oriented architecture:
+For the technical folks, Crawlable operates on a highly decoupled, service-oriented architecture:
 
 1. **Phase 1: Structural Crawl (`AsyncFileSystemService`)**
-   Generates a pre-filtered map of the directory, instantly applying `HARDCODED_EXCLUSIONS` (mathematically guaranteed noise) and our Smart Truncation algorithm.
+Generates a pre-filtered map of the directory, instantly applying `HARDCODED_EXCLUSIONS` (mathematically guaranteed noise) and our Smart Truncation algorithm.
 2. **Phase 2: Intelligent AI Filtering (`GeminiFilterService`)**
-   Passes the roadmap to `gemini-2.5-flash` with a strict JSON schema prompt to dynamically identify project-specific noise. Includes exponential backoff and retry logic for API resilience.
+Passes the roadmap to `gemini-2.5-flash` with a strict JSON schema prompt to dynamically identify project-specific noise. Includes exponential backoff and retry logic for API resilience.
 3. **Phase 3: Targeted Extraction (`AsyncCodeExtractorService`)**
-   Fires off non-blocking `asyncio.gather` tasks to read all approved files concurrently, updating the `rich` UI progress bar in real-time.
+Fires off non-blocking `asyncio.gather` tasks to read all approved files concurrently, updating the `rich` UI progress bar in real-time.
 4. **Phase 4: Output Generation**
-   Orchestrated by `CrowablePipeline`, saving versioned artifacts to the file system.
+Orchestrated by `CrawlablePipeline`, saving versioned artifacts to the file system.
 
 ---
 
 ## 🤝 Contributing
 
-We want Crowable to be the absolute standard for AI code extraction. Contributions from developers of all skill levels are highly welcomed!
+We want Crawlable to be the absolute standard for AI code extraction. Contributions from developers of all skill levels are highly welcomed!
 
 **How to contribute:**
+
 1. Fork the Project.
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
@@ -147,7 +153,9 @@ Distributed under the Apache 2.0 License. See `LICENSE` for more information. Th
 
 ## 👨‍💻 Author
 
-**Mouhamed Gharsallah** 
-- GitHub: [@Med-Gh-TN](https://github.com/Med-Gh-TN)
+**Mouhamed Gharsallah** - GitHub: [@Med-Gh-TN](https://github.com/Med-Gh-TN)
 
 *Built with ❤️ for the open-source community. Let's make AI collaboration seamless.*
+Would you like me to help you draft the **Release Notes** for version 1.0 of Crawlable?
+
+```
