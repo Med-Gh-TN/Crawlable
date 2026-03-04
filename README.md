@@ -136,4 +136,3 @@ Distributed under the Apache 2.0 License. See `LICENSE` for more information. Th
 - GitHub: [@Med-Gh-TN](https://github.com/Med-Gh-TN)
 
 *Built with ❤️ for the open-source community. Let's make AI collaboration seamless.*
-```
