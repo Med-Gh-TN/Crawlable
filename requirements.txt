@@ -1,0 +1,11 @@
+# The modern, official Google AI SDK
+google-genai
+
+# UI and Dashboarding
+rich
+
+# Optional: Faster async performance for large projects
+aiohttp
+
+# Optional: For future Pydantic structured data support
+pydantic
