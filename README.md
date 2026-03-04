@@ -3,17 +3,17 @@
 # 🦅 Crowable
 **State-of-the-Art (SOTA) AI-Powered Codebase Extractor**
 
-<a href="https://github.com/Med-Gh-TN/Crawable/stargazers">
-  <img src="https://img.shields.io/github/stars/Med-Gh-TN/Crawable?style=for-the-badge&logo=github&color=FFD700" alt="GitHub Stars" />
+<a href="https://github.com/Med-Gh-TN/Crowable/stargazers">
+  <img src="https://img.shields.io/github/stars/Med-Gh-TN/Crowable?style=for-the-badge&logo=github&color=FFD700" alt="GitHub Stars" />
 </a>
-<a href="https://github.com/Med-Gh-TN/Crawable/network/members">
-  <img src="https://img.shields.io/github/forks/Med-Gh-TN/Crawable?style=for-the-badge&logo=github&color=FF8C00" alt="GitHub Forks" />
+<a href="https://github.com/Med-Gh-TN/Crowable/network/members">
+  <img src="https://img.shields.io/github/forks/Med-Gh-TN/Crowable?style=for-the-badge&logo=github&color=FF8C00" alt="GitHub Forks" />
 </a>
-<a href="https://github.com/Med-Gh-TN/Crawable/issues">
-  <img src="https://img.shields.io/github/issues/Med-Gh-TN/Crawable?style=for-the-badge&logo=github&color=EA4335" alt="GitHub Open Issues" />
+<a href="https://github.com/Med-Gh-TN/Crowable/issues">
+  <img src="https://img.shields.io/github/issues/Med-Gh-TN/Crowable?style=for-the-badge&logo=github&color=EA4335" alt="GitHub Open Issues" />
 </a>
-<a href="https://github.com/Med-Gh-TN/Crawable">
-  <img src="https://komarev.com/ghpvc/?username=Med-Gh-TN-Crawable&label=REPO%20VIEWS&style=for-the-badge&color=007EC6" alt="Repository Views" />
+<a href="https://github.com/Med-Gh-TN/Crowable">
+  <img src="https://komarev.com/ghpvc/?username=Med-Gh-TN-Crowable&label=REPO%20VIEWS&style=for-the-badge&color=007EC6" alt="Repository Views" />
 </a>
 
 <br />
