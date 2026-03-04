@@ -3,10 +3,25 @@
 # 🦅 Crowable
 **State-of-the-Art (SOTA) AI-Powered Codebase Extractor**
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/downloads/)
-[![Powered by Gemini](https://img.shields.io/badge/Powered_by-Google_Gemini-8A2BE2.svg)](https://ai.google.dev/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+<!-- Dynamic Status & Counter Badges -->
+<a href="https://github.com/Med-Gh-TN/Crawable/stargazers">
+  <img src="https://img.shields.io/github/stars/Med-Gh-TN/Crawable?style=for-the-badge&logo=github&color=FFD700" alt="GitHub Stars" />
+</a>
+<a href="https://github.com/Med-Gh-TN/Crawable/network/members">
+  <img src="https://img.shields.io/github/forks/Med-Gh-TN/Crawable?style=for-the-badge&logo=github&color=FF8C00" alt="GitHub Forks" />
+</a>
+<a href="https://github.com/Med-Gh-TN/Crawable/issues">
+  <img src="https://img.shields.io/github/issues/Med-Gh-TN/Crawable?style=for-the-badge&color=EA4335" alt="GitHub Open Issues" />
+</a>
+<a href="https://github.com/Med-Gh-TN/Crawable">
+  <img src="https://komarev.com/ghpvc/?username=Med-Gh-TN-Crawable&label=Repo%20Views&style=for-the-badge&color=007EC6" alt="Repository Views" />
+</a>
+
+<br />
+
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-green.svg?style=flat-square)](https://www.python.org/downloads/)
+[![Powered by Gemini](https://img.shields.io/badge/Powered_by-Google_Gemini-8A2BE2.svg?style=flat-square)](https://ai.google.dev/)
 
 *Stop manually copy-pasting code into ChatGPT. Let AI compress your entire repository into a single, token-optimized text file.*
 
