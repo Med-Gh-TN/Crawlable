@@ -1,0 +1,17 @@
+# The modern, official Google AI SDK
+google-genai
+
+# UI and Dashboarding (Legacy CLI)
+rich
+
+# Optional: Faster async performance for large projects
+aiohttp
+
+# Optional: For future Pydantic structured data support
+pydantic
+
+# ==========================================
+# WEB DASHBOARD (NEW)
+# ==========================================
+fastapi==0.110.0
+uvicorn==0.29.0
